@@ -1,8 +1,7 @@
 # GradioStableDiffusionCPP
 Gradio interface to run SD cpp on every computer
 
-<img src='https://github.com/fabiomatricardi/GradioStableDiffusionCPP/raw/main/IM-MW0FA.png' width=450>
-
+<img src='https://github.com/fabiomatricardi/GradioStableDiffusionCPP/blob/main/SDCPPGradio_XL.gif' width=900>
 
 
 ### Stable Diffusion CPP
@@ -178,3 +177,12 @@ with gr.Blocks(fill_width=True,theme=theme) as demo:
 if __name__ == "__main__":
     demo.launch()   
 ```
+
+### Generated isometric image
+
+<img src='https://github.com/fabiomatricardi/GradioStableDiffusionCPP/raw/main/IM-MW0FA.png' width=450>
+
+---
+
+
+
