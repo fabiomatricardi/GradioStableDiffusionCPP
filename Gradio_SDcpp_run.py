@@ -28,14 +28,23 @@ def genRANstring(n):
     N = n
     res = ''.join(random.choices(string.ascii_uppercase +
                                 string.digits, k=N))
-    print(f'Logfile_{res}.png  CREATED')
-    return f'IMAGE_SDCPP_{res}.png'
+    print(f'IM-{res}.png  CREATED')
+    return f'IM-{res}.png'
 
 
 console = Console(width=80)
 theme=gr.themes.Default(primary_hue="blue", secondary_hue="pink",
                         font=[gr.themes.GoogleFont("Lato"), "Arial", "sans-serif"]) 
 SAMPLINGMETHOD = ['euler', 'euler_a', 'heun', 'dpm2', 'dpm++2s_a', 'dpm++2m', 'dpm++2mv2', 'ipndm', 'ipndm_v', 'lcm']
+
+def initiateLOG():
+    filename = "test.log"
+    with open(filename, 'w') as file:
+        # Write some text to the file
+        file.write("Start Logging\n")
+    file.close()
+
+initiateLOG()
 
 def openDIR():
     """
@@ -99,12 +108,13 @@ def CreateImage(PROMPT,STEPS,WIDTH,HEIGHT, CONFIGSCALE,SAMPLINGMETHOD):
         '-o',
         fILENAME]
 
+    initiateLOG()
     filename = "test.log"
     with io.open(filename, "wb") as writer, io.open(filename, "rb", 1) as reader:
         process = subprocess.Popen(args, stdout=writer)
         while process.poll() is None:
             sys.stdout.write(reader.read().decode("utf-8"))
-            time.sleep(0.5)
+            time.sleep(1)
         # Read the remaining
         sys.stdout.write(reader.read().decode("utf-8"))
 
