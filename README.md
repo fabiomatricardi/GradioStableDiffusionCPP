@@ -1,6 +1,8 @@
 # GradioStableDiffusionCPP
 Gradio interface to run SD cpp on every computer
 
+<img src='https://github.com/fabiomatricardi/GradioStableDiffusionCPP/raw/main/IM-MW0FA.png' width=450>
+
 
 
 ### Stable Diffusion CPP
@@ -27,7 +29,7 @@ It allows you to run diffusion models even on CPU, using also quantized versions
 - guide to use `subprocess` library is [here](https://python.land/operating-system/python-subprocess)
 - you can also use LloRas example for [Avatar-Naavi](https://civitai.com/models/227743?modelVersionId=256934) or for [LEGO](https://civitai.com/models/111590/lego) inspired images from Civita.AI
 
-<img src='' width=350> <img src='' width=350>
+<img src='https://github.com/fabiomatricardi/GradioStableDiffusionCPP/raw/main/naavi-LloRa.jpeg' height=350> <img src='https://github.com/fabiomatricardi/GradioStableDiffusionCPP/raw/main/lego-LloRa.jpeg' height=350>  
   
 - inspired from my previous article, but easier [https://medium.com/generative-ai/generate-images-cpp-is-this-a-thing-d7f5f11a0e0e](https://medium.com/generative-ai/generate-images-cpp-is-this-a-thing-d7f5f11a0e0e)
 - for how to [add metadata to PNG files](https://stackoverflow.com/questions/58399070/how-do-i-save-custom-information-to-a-png-image-file-in-python)
