@@ -24,7 +24,7 @@ gradio_log
 
 ### Description
 It allows you to run diffusion models even on CPU, using also quantized versions of the models.
-- model can be downloaded [here](https://huggingface.co/Lykon/DreamShaper)
+- model can be downloaded [here](https://civitai.com/api/download/models/128713?type=Model&format=SafeTensor&size=pruned&fp=fp16)  or [here](https://huggingface.co/Lykon/DreamShaper)
 - guide to use `subprocess` library is [here](https://python.land/operating-system/python-subprocess)
 - you can also use LloRas example for [Avatar-Naavi](https://civitai.com/models/227743?modelVersionId=256934) or for [LEGO](https://civitai.com/models/111590/lego) inspired images from Civita.AI
 
